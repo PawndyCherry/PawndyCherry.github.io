@@ -376,6 +376,9 @@ h4 {
 
 .role-fig { margin-top: 24px; max-width: 460px; }
 
+.grad-fig { margin-top: 20px; max-width: 520px; }
+.fig.wide { aspect-ratio: 3 / 2; }
+
 .stack { display: grid; gap: 18px; }
 .stack figure { margin: 0; }
 
@@ -548,7 +551,10 @@ h4 {
   margin-top: 40px;
   align-items: start;
 }
-.also { max-width: 760px; }
+.also { max-width: 860px; margin-top: 40px; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 18px 0 28px; }
+.pair figure { margin: 0; }
+@media (max-width: 640px) { .pair { grid-template-columns: 1fr; } }
 .also p { margin: 0 0 12px; color: var(--ink-2); }
 .also strong { color: var(--ink); }
 
